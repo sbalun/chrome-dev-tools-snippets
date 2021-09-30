@@ -1,0 +1,42 @@
+function clickItem(item){
+    item.click()
+}
+
+function toggleAll(){
+    document.querySelector("#toggle-all").click();
+}
+
+function showAllToDos(){
+    location.hash = "/";
+}
+
+function showActiveToDos(){
+    location.hash = "/active";
+}
+
+function showCompletedToDos(){
+    location.hash = "/completed";
+}
+
+function clickItemX(x){
+    document.querySelector("ul > li:nth-child(" + x + ") input.toggle").click();
+}
+
+function deleteItemX(x){
+    document.querySelector("ul.todo-list > li:nth-child(" + x +") button.destroy").click();
+}
+
+function createToDo(name){
+    document.querySelector("input.new-todo").value=name;
+    document.querySelector("input.new-todo").dispatchEvent(new Event('change',{'bubble':true}));
+}
+
+function amendToDo(x,amendedValue){
+    document.querySelector("ul.todo-list > li:nth-child("+ x +") > div > label").dispatchEvent(new Event('dblclick',{'bubbles':true}));
+    document.querySelector("ul.todo-list > li:nth-child("+ x +") .edit").value=amendedValue;
+    document.querySelector("ul.todo-list > li:nth-child("+ x +") .edit").dispatchEvent(new Event('blur'));
+}
+
+function clearCompleted(){
+    document.querySelector("body > section > footer > button").click();
+}

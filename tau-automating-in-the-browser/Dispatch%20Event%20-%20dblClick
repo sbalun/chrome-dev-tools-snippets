@@ -1,0 +1,1 @@
+document.querySelector("ul.todo-list > li:nth-child(1) .edit").dispatchEvent(new Event('dblclick',{'bubbles':true}));

@@ -1,0 +1,13 @@
+var rando = function(){
+
+    function getRandomItemIndex(){
+    max = document.querySelectorAll("ul.todo-list li").length;
+    if(max===0){
+        console.log("no items to choose from");
+        return 0;
+    }
+    x = getRandomInt(max)+1;
+    return x;
+}
+
+}

@@ -1,0 +1,1 @@
+document.querySelector("#toggle-all").click();

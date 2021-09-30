@@ -1,0 +1,1 @@
+document.querySelector("ul.todo-list > li:nth-child(1) .edit").value='my amended value';

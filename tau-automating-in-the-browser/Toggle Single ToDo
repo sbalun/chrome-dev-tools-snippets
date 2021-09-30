@@ -1,0 +1,1 @@
+document.querySelector("ul > li:nth-child(1) input.toggle").click();

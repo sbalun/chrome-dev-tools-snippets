@@ -1,0 +1,7 @@
+toggles = document.querySelectorAll("input.toggle")
+
+for(index=0;index<toggles.length;index++){
+    if(index%2==0){
+        toggles[index].click();
+        }
+}

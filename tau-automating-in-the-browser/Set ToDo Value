@@ -1,0 +1,1 @@
+document.querySelector("input.new-todo").value="my-to-do";

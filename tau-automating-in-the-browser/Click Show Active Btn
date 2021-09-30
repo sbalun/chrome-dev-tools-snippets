@@ -1,0 +1,1 @@
+document.querySelector("ul.filters > li:nth-child(2) > a").click();
